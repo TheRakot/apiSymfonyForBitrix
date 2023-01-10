@@ -1,0 +1,4 @@
+# apiSymfonyForBitrix .gitignore
+
+/.idea
+/vendor

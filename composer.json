@@ -1,0 +1,34 @@
+{
+	"require": {
+		"php"                         : "^7.4",
+		"ext-json"                    : "*",
+		"monolog/monolog"             : "1.*",
+		"beberlei/assert"             : "^3.2",
+		"sentry/sdk"                  : "^3.1",
+		"symfony/cache"               : "^5.2",
+		"symfony/config"              : "^5.2",
+		"symfony/dependency-injection": "^5.2",
+		"symfony/routing"             : "^5.2",
+		"symfony/http-foundation"     : "^5.2",
+		"symfony/yaml"                : "^5.2",
+		"psr/container"               : "1.0.0"
+	},
+	"require-dev": {
+		"matiaspub/bx-api-docs": "^16.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"Api\\"     : "local/classes/Api",
+			"DI\\"      : "local/classes/DI",
+			"Classes\\" : "local/classes"
+		}
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"@auto-scripts"
+		],
+		"post-update-cmd": [
+			"@auto-scripts"
+		]
+	}
+}
