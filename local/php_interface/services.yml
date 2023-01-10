@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  #Logger для ApiV1
+  Psr\Log\LoggerInterfaceApiV1:
+    factory: ['Classes\Logs\router', 'getApiV1']
+  #Пример контроллера для ApiV1
+  Api\Controllers\Example:
